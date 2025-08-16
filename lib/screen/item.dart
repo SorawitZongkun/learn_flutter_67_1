@@ -18,7 +18,8 @@ class _ItemState extends State<Item> {
         return Container(
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(30),
-            color: Colors.pinkAccent,
+            // color: Colors.pinkAccent,
+            color: personList[index].job.color,
           ),
           margin: EdgeInsets.symmetric(vertical: 2, horizontal: 5),
           padding: EdgeInsets.all(40),
@@ -34,9 +35,10 @@ class _ItemState extends State<Item> {
                 style: TextStyle(color: Colors.white, fontSize: 20),
               ),
               Text(
-                personList[index].job,
+                personList[index].job.title,
                 style: TextStyle(color: Colors.white, fontSize: 20),
               ),
+              Image.asset(personList[index].job.image, width: 50, height: 50),
             ],
           ),
         );
