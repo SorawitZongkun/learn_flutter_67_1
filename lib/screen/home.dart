@@ -5,20 +5,56 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Container(
-        color: Colors.blueAccent,
-        margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-        padding: EdgeInsets.all(50),
-        child: Text(
-          "Hello Flutter! Step4",
-          style: TextStyle(
-            fontSize: 30,
-            color: Colors.white,
-            fontWeight: FontWeight.bold,
+    // return Row(
+    return Column(
+      // mainAxisAlignment: MainAxisAlignment.start,
+      // mainAxisAlignment: MainAxisAlignment.center,
+      // mainAxisAlignment: MainAxisAlignment.end,
+      // mainAxisAlignment: MainAxisAlignment.spaceAround,
+      // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        Container(
+          color: Colors.redAccent,
+          padding: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
+          child: Text(
+            "Hello",
+            style: TextStyle(
+              fontSize: 20,
+              color: Colors.white,
+              fontWeight: FontWeight.bold,
+              letterSpacing: 3,
+            ),
           ),
         ),
-      ),
+        Container(
+          color: Colors.redAccent,
+          padding: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
+          child: Text(
+            "Hello",
+            style: TextStyle(
+              fontSize: 20,
+              color: Colors.white,
+              fontWeight: FontWeight.bold,
+              letterSpacing: 3,
+            ),
+          ),
+        ),
+        Container(
+          color: Colors.redAccent,
+          padding: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
+          child: Text(
+            "Hello",
+            style: TextStyle(
+              fontSize: 20,
+              color: Colors.white,
+              fontWeight: FontWeight.bold,
+              letterSpacing: 3,
+            ),
+          ),
+        ),
+      ],
     );
   }
 }
