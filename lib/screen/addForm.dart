@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 import 'package:learn_flutter_67_1/model/person.dart';
 
+import 'package:learn_flutter_67_1/main.dart';
+
 class AddForm extends StatefulWidget {
   const AddForm({super.key});
 
@@ -115,6 +117,16 @@ class _AddFormState extends State<AddForm> {
                       });
                       // Clear form
                       _formKey.currentState!.reset();
+
+                      // Navigate back to Item screen
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) {
+                            return MyApp();
+                          },
+                        ),
+                      );
                     }
                   },
                   style: FilledButton.styleFrom(
